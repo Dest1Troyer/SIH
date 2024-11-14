@@ -1,0 +1,194 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg,#caf0f8,#caf0f87d );
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background: linear-gradient(180deg,#c8b6ff,#caf0f8 );
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #023e8a;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#searchBar {
+    width: 40%;
+    padding: 8px 15px 8px 40px; /* Adjust padding to make space for the icon */
+    margin: 15px 0;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-image: url('search-vector.png'); /* Add the search icon */
+    background-size:25px; /* Resize the icon */
+    background-position: 10px center ; /* Position the icon inside the input */
+    background-repeat: no-repeat; /* Prevent the icon from repeating */
+
+}
+
+#searchBar:focus {
+    border-color: #23eb2a;
+    box-shadow: 0 4px 8px rgba(157, 225, 168, 0.2);
+}
+#showmorebtn {
+    background: linear-gradient(0deg,#b031ff,rgb(138, 48, 255) );
+    border: none; 
+    color: white;
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 20px 0; 
+    cursor: pointer; 
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#showmorebtn:hover {
+    background: linear-gradient(0deg,#9d00ff,rgb(111, 0, 255) );
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+}
+
+.extra {
+    display: none;
+
+}
+
+
+.careers {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px; /* Space between rows */
+}
+
+/* Career Boxes styling */
+.career-boxes {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for the boxes */
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px; /* Adds space between boxes */
+}
+
+.career-box {
+    width: calc(25% - 30px); /* Ensures 4 boxes in a row, minus the gap */
+    background-color: white;
+    padding: 20px;
+    margin: 10px; /* Adjust margin to balance space */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-basis: 19%; /* Ensures boxes take up 23% of the row width */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Title inside the career boxes */
+.career-box h3 {
+    color: #00a6fb;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+/* Description inside the career boxes */
+.career-box p {
+    color: #555;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Hover animation for popup effect */
+.career-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #a2d2ff91;
+}
+
+.career-box:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.1);
+    z-index: 0;
+    border-radius: 15px;
+}
+
+/* Button styling */
+.button-container {
+    margin-top: 30px;
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    z-index: 1;
+}
+
+.start-btn {
+    background: linear-gradient(0deg,#b031ff,rgb(138, 48, 255) );
+    border: none; 
+    color: white;
+    padding: 12px 24px; 
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 20px 0; 
+    cursor: pointer; 
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    
+}
+
+.start-btn:hover {
+    background: linear-gradient(0deg,#9d00ff,rgb(111, 0, 255) );
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+}
+
+.start-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .career-box {
+        width: 100%; /* Stack boxes on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+

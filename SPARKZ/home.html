@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARKZ - Career Guidance</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to SPARKZ</h1>
+        <p>Your AI-Enhanced Career Guidance Platform</p>
+        
+        <!-- Explore text moved here -->
+        <h2 id="explore-text">Explore Different Career Options</h2>
+        <div class="button-container">
+            <button class="start-btn"><a href="app.html"> Aptitude Test </a></button>
+        </div>
+        <!-- Search Bar just below the text -->
+        <input type="text" id="searchBar" placeholder="Search for a career..." onkeyup="searchCareer()">
+    </header>
+
+
+<section>     
+    <div class="career-boxes">
+        <div class="career-box" >
+            <h3>Doctor</h3>
+            <p>Doctors diagnose and treat medical conditions, helping to improve patients' health.</p>
+        </div>    
+        <div class="career-box">
+            <h3>Engineer</h3>
+            <p>Engineers design, build, and maintain machines, structures, and technology solutions.</p>
+        </div>
+        <div class="career-box" onclick="window.location.href='graphicdesinger.html'">
+            <h3>Graphic Designer</h3>
+            <p>Graphic designers create visual content to communicate messages through art and layout.</p>
+        </div>
+        <div class="career-box">
+            <h3>Teacher</h3>
+            <p>Teachers educate students in a variety of subjects, shaping future generations.</p>
+        </div>
+        <div class="career-box">
+            <h3>Animator</h3>
+            <p>Animators create moving visuals for media, entertainment, and advertisements.</p>
+        </div>
+        <div class="career-box">
+            <h3>Data Analyst</h3>
+            <p>Data analysts interpret complex data to help organizations make informed decisions.</p>
+        </div>
+        <div class="career-box">
+            <h3>Software Developer</h3>
+            <p>Software developers design and build computer programs and applications.</p>
+        </div>
+        <div class="career-box">
+            <h3>Architect</h3>
+            <p>Architects plan and design buildings, ensuring they are functional and aesthetically pleasing.</p>
+        </div>
+        <div class="career-box">
+            <h3>Marketing Manager</h3>
+            <p>Marketing managers develop strategies to promote products and services to customers.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Lawyer</h3>
+            <p>Lawyers provide legal advice and representation to individuals and organizations.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Accountant</h3>
+            <p>Accountants manage financial records and help organizations maintain fiscal health.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Scientist</h3>
+            <p>Scientists conduct research to expand knowledge in various fields, such as biology or physics.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Psychologist</h3>
+            <p>Psychologists study mental processes and behavior to help people manage psychological issues.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Chef</h3>
+            <p>Chefs create and prepare meals in restaurants, focusing on taste, presentation, and innovation.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Civil Engineer</h3>
+            <p>Civil engineers design and oversee the construction of infrastructure, such as roads and bridges.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Pharmacist</h3>
+            <p>Pharmacists dispense medications and provide advice on their safe use to patients.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Nurse</h3>
+            <p>Nurses provide care to patients, assist doctors, and monitor patient health conditions.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Environmental Scientist</h3>
+            <p>Environmental scientists study the environment and develop solutions to environmental problems.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Journalist</h3>
+            <p>Journalists gather and report news, writing articles or producing multimedia content.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Photographer</h3>
+            <p>Photographers capture images to tell stories, document events, or create art.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Financial Analyst</h3>
+            <p>Financial analysts evaluate financial data to help companies and individuals make investment decisions.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Veterinarian</h3>
+            <p>Veterinarians provide medical care to animals, diagnosing and treating health issues.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Social Worker</h3>
+            <p>Social workers help individuals and families improve their well-being through counseling and support services.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Web Developer</h3>
+            <p>Web developers design and build websites, ensuring functionality and user experience.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Economist</h3>
+            <p>Economists study economic trends and provide insights for decision-making in business and government.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Event Planner</h3>
+            <p>Event planners organize events, from weddings to corporate conferences, managing all details and logistics.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Cybersecurity Analyst</h3>
+            <p>Cybersecurity analysts protect computer systems from cyber threats and security breaches.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Chef</h3>
+            <p>Chefs oversee kitchen operations and create unique, flavorful dishes in restaurants and hotels.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>UX/UI Designer</h3>
+            <p>UX/UI designers create intuitive, user-friendly interfaces for digital products and services.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Translator</h3>
+            <p>Translators convert written content from one language to another while preserving its meaning.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>HR Manager</h3>
+            <p>HR managers oversee employee relations, recruitment, and workplace policies in organizations.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Product Manager</h3>
+            <p>Product managers oversee the development of products, ensuring they meet customer needs and business goals.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Biotechnologist</h3>
+            <p>Biotechnologists use biological systems and organisms to develop new products and technologies.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Video Game Designer</h3>
+            <p>Video game designers create game concepts, characters, and storylines to develop engaging video games.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Electrician</h3>
+            <p>Electricians install, maintain, and repair electrical systems in buildings and homes.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Content Writer</h3>
+            <p>Content writers produce written content for websites, blogs, and other digital platforms.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Statistician</h3>
+            <p>Statisticians collect and analyze numerical data to make informed decisions and predictions.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Paramedic</h3>
+            <p>Paramedics provide emergency medical care, stabilizing patients and transporting them to hospitals.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Supply Chain Manager</h3>
+            <p>Supply chain managers oversee the production, transportation, and delivery of goods.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Geologist</h3>
+            <p>Geologists study the Earth's structure, analyzing rocks, minerals, and natural resources.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Aerospace Engineer</h3>
+            <p>Aerospace engineers design aircraft, spacecraft, and satellites for space exploration and transportation.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Clinical Psychologist</h3>
+            <p>Clinical psychologists diagnose and treat mental health issues through therapy and counseling.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Investment Banker</h3>
+            <p>Investment bankers advise companies on financial strategies, mergers, and acquisitions.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Interior Designer</h3>
+            <p>Interior designers create aesthetically pleasing and functional indoor spaces for homes and businesses.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Event Manager</h3>
+            <p>Event managers oversee the planning and execution of events, including conferences, weddings, and festivals.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Marine Biologist</h3>
+            <p>Marine biologists study marine ecosystems, animals, and environments to protect and conserve ocean life.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Data Scientist</h3>
+            <p>Data scientists analyze and interpret large datasets to extract meaningful insights for businesses and organizations.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Software Tester</h3>
+            <p>Software testers ensure the quality and functionality of software by identifying bugs and errors.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Nutritionist</h3>
+            <p>Nutritionists advise individuals on healthy eating habits and dietary plans to improve overall health.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Real Estate Agent</h3>
+            <p>Real estate agents help clients buy, sell, and rent properties, offering expertise in the real estate market.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Art Director</h3>
+            <p>Art directors oversee the visual style of advertisements, films, and magazines to convey artistic vision.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Game Developer</h3>
+            <p>Game developers design and create video games for computers, consoles, and mobile devices.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Mechanical Engineer</h3>
+            <p>Mechanical engineers design, develop, and maintain mechanical systems in various industries.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Public Relations Specialist</h3>
+            <p>Public relations specialists manage communication between organizations and the public.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Pilot</h3>
+            <p>Pilots operate aircraft to transport passengers or cargo across various distances.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Actuary</h3>
+            <p>Actuaries analyze financial risks using mathematics and statistics to help businesses make decisions.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Biomedical Engineer</h3>
+            <p>Biomedical engineers develop medical devices and technology to improve healthcare.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Chiropractor</h3>
+            <p>Chiropractors diagnose and treat musculoskeletal issues, particularly related to the spine.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Urban Planner</h3>
+            <p>Urban planners develop land use plans to help create sustainable and efficient cities and communities.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Video Producer</h3>
+            <p>Video producers oversee the production of video content for films, television, or digital platforms.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Database Administrator</h3>
+            <p>Database administrators manage and maintain database systems, ensuring their security and efficiency.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Physiotherapist</h3>
+            <p>Physiotherapists help patients recover from injuries and manage physical conditions through therapy.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Translator</h3>
+            <p>Translators convert written content from one language to another, ensuring accurate meaning and context.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Ethical Hacker</h3>
+            <p>Ethical hackers test the security of systems by attempting to breach them, helping organizations strengthen defenses.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Product Designer</h3>
+            <p>Product designers develop new products, from concept to manufacturing, ensuring functionality and style.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Food Scientist</h3>
+            <p>Food scientists study food processes and work to improve the safety and quality of food products.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Artificial Intelligence Engineer</h3>
+            <p>AI engineers design and develop intelligent systems that can learn, make decisions, and solve problems.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Pharmacologist</h3>
+            <p>Pharmacologists study the effects of drugs on the human body to develop new medicines.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Speech Therapist</h3>
+            <p>Speech therapists work with individuals to improve their speech, communication, and language skills.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Wildlife Biologist</h3>
+            <p>Wildlife biologists study animals and their ecosystems, working to protect species and habitats.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Tourism Manager</h3>
+            <p>Tourism managers plan and promote tourism activities, helping to develop local attractions and hospitality services.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Digital Marketing Specialist</h3>
+            <p>Digital marketing specialists promote brands, products, and services online through various digital channels.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Surgeon</h3>
+            <p>Surgeons perform operations to treat diseases, injuries, and deformities.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Animator</h3>
+            <p>Animators create animations for television, movies, video games, and advertisements.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Oceanographer</h3>
+            <p>Oceanographers study the ocean, including its ecosystems, currents, and physical properties.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Political Analyst</h3>
+            <p>Political analysts study political systems and provide insights into governmental policies and issues.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Park Ranger</h3>
+            <p>Park rangers protect and manage natural areas, ensuring safety and conservation of wildlife and ecosystems.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Video Editor</h3>
+            <p>Video editors cut and arrange video footage to create compelling and visually appealing stories.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Fitness Trainer</h3>
+            <p>Fitness trainers guide individuals through exercise routines to improve health and fitness levels.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Insurance Underwriter</h3>
+            <p>Insurance underwriters assess risks and determine whether insurance policies should be issued.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Event Coordinator</h3>
+            <p>Event coordinators plan and manage all aspects of events, from weddings to corporate functions.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Firefighter</h3>
+            <p>Firefighters protect communities by responding to fires and other emergencies.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Legal Assistant</h3>
+            <p>Legal assistants support lawyers by organizing case files, conducting research, and drafting documents.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Occupational Therapist</h3>
+            <p>Occupational therapists help individuals recover and improve their ability to perform daily tasks.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Microbiologist</h3>
+            <p>Microbiologists study microorganisms and their impact on humans, animals, plants, and the environment.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Fashion Designer</h3>
+            <p>Fashion designers create original clothing and accessories, developing styles for mass production or custom pieces.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Genetic Counselor</h3>
+            <p>Genetic counselors provide information and support to families affected by genetic disorders.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Truck Driver</h3>
+            <p>Truck drivers transport goods over long distances, ensuring timely deliveries to various locations.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Executive Chef</h3>
+            <p>Executive chefs oversee kitchen operations, ensuring food quality, menu development, and staff management.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Robotics Engineer</h3>
+            <p>Robotics engineers design and develop robots used in industries, healthcare, and research.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Botanist</h3>
+            <p>Botanists study plant life, researching the growth, structure, and ecological role of plants.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Photographer</h3>
+            <p>Photographers capture images of people, events, and scenes to tell stories or convey messages.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Tax Consultant</h3>
+            <p>Tax consultants advise individuals and businesses on tax planning, compliance, and financial strategies.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Advertising Manager</h3>
+            <p>Advertising managers develop and execute advertising strategies to promote products or services.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Marine Engineer</h3>
+            <p>Marine engineers design and maintain ships, boats, and other marine vessels.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Sound Engineer</h3>
+            <p>Sound engineers manage audio systems and create sound effects for concerts, recordings, and broadcasts.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Zoologist</h3>
+            <p>Zoologists study animal species, their behavior, and their habitats, often working in conservation.</p>
+        </div>
+        <div class="career-box extra" style="display: none;">
+            <h3>Customs Officer</h3>
+            <p>Customs officers regulate the flow of goods and people into a country, ensuring compliance with laws.</p>
+            </div>
+            <div class="career-box extra" style="display: none;">
+                <h3>Dermatologist</h3>
+                <p>Dermatologists specialize in diagnosing and treating skin, hair, and nail disorders.</p>
+            </div>
+            <div class="career-box extra" style="display: none;">
+                <h3>Astronomer</h3>
+                <p>Astronomers study celestial objects and phenomena to understand the universe and its origins.</p>
+            </div>            
+        
+    </div>
+    <button id="showmorebtn" onclick="toggleContent()">Show More</button>
+</section>
+<script>
+    function searchCareer() {
+
+    let input = document.getElementById('searchBar').value.toLowerCase();
+    
+
+    let careerBoxes = document.getElementsByClassName('career-box');
+    
+
+    Array.from(careerBoxes).forEach(function(careerBox) {
+
+        let careerName = careerBox.getElementsByTagName('h3')[0].innerText.toLowerCase();
+        
+
+        if (careerName.includes(input)) {
+            careerBox.style.display = "";  
+        } else {
+            careerBox.style.display = "none";  
+        }
+
+    });
+    let n=0
+    if (input===''){
+        Array.from(careerBoxes).forEach(function(careerBox){
+            if (n>8){
+                careerBox.style.display='none';
+            }
+            n+=1
+
+        }
+    )
+    }
+}
+
+    </script>
+<script src="script.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Guidance System</title>
+    <link rel="stylesheet" href="static/styles/app.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Career Guidance</h1>
+
+        <div id="questions"> 
+            <div class="question">
+                <label for="q1">Do you enjoy working closely with people and helping them improve their well-being?</label>
+                <select id="q1">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q2">Are you more interested in working with technology, machines, or technical systems?</label>
+                <select id="q2">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q3">Do you enjoy solving complex problems using data or analysis?</label>
+                <select id="q3">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q4">Do you prefer working in creative fields such as design, art, or media?</label>
+                <select id="q4">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q5">Would you enjoy a leadership role where you manage projects or teams?</label>
+                <select id="q5">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q6">Do you prefer working in an academic or educational environment, teaching or researching?</label>
+                <select id="q6">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q7">Are you interested in a career that involves building, designing, or maintaining structures or physical systems?</label>
+                <select id="q7">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <button onclick="suggestCareer()">Submit</button>
+
+            <div id="careerSuggestion" class="career-suggestion"></div>
+        </div>
+    </div>
+
+</body>
+
+    <script src="career.js"></script>
+</body>
+</html>
